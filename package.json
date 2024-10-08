@@ -1,7 +1,7 @@
 {
   "name": "arco",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,8 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.12",
     "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^5.1.1",
+    "astro": "^4.15.12",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^4.0.0"
   }
 }
