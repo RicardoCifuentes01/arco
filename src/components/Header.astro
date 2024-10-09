@@ -1,0 +1,18 @@
+---
+import Menu from "./Menu.astro";
+import IconArco from "../assets/icons/header/IconArco.astro";
+import IconGitHub from "../assets/icons/header/IconGitHub.astro";
+import IconMenu from "../assets/icons/header/IconMenu.astro";
+---
+
+<header
+    class="sticky top-0 w-full h-auto px-5 py-2 z-10 bg-lightGrey md:h-auto md:py-2 md:px-10"
+    id="header"
+>
+    <main class="w-full flex justify-between md:hidden">
+        <figure class="w-5 h-5" id="arco"><IconArco /></figure>
+        <figure class="w-5 h-5" id="gitHub"><IconGitHub /></figure>
+        <figure class="w-5 h-5" id="openMenu"><IconMenu /></figure>
+    </main>
+    <Menu />
+</header>
