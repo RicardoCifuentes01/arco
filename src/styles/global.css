@@ -32,3 +32,36 @@ p {
         height: 0vh;
     }
 }
+
+.backgroundTitleViolin::before {
+    grid-area: title/title/violin/violin;
+}
+
+.backgroundViolinDescription2c::after {
+    grid-area: violin/violin/description2c/description2c;
+}
+
+@media (min-width:600px) {
+    .backgroundTitleViolin::before {
+        grid-area: 1/1/3/3;
+    }
+
+    .backgroundViolinDescription2c::after {
+        grid-area: 3/1/7/3;
+    }
+}
+
+@media (min-width:1200px) {
+    .backgroundTitleViolin::before {
+        grid-area: 1/1/2/5;
+    }
+
+    .backgroundViolinDescription2c::after {
+        grid-area: 2/1/4/5;
+    }
+
+    .writingMode {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+}

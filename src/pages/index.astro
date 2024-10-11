@@ -1,12 +1,18 @@
 ---
-import Header from "../components/Header.astro";
 import "../styles/global.css";
+import Header from "../components/Header.astro";
+import IconCheck from "../assets/icons/main/IconCheck.astro";
+import IconCompass from "../assets/icons/main/IconCompass.astro";
+import IconMark from "../assets/icons/main/IconMark.astro";
+import IconGitHub from "../assets/icons/main/IconGitHub.astro";
+import "@fontsource/italiana";
+import "@fontsource-variable/inter";
 ---
 
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg" href="./src/assets/arco.svg" />
+		<link rel="icon" type="image/svg" href="icons/arco.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Arco</title>
@@ -14,44 +20,90 @@ import "../styles/global.css";
 	<body class="">
 		<Header />
 		<main
-			class="w-4/5 h-auto mx-auto py-10 px-5 bg-gradient-to-b from-cyan-500 to-purple-500"
+			class="w-full font-inter font-extralight grid gap-4 grid-areas-smMain grid-rows-smRowslMain backgroundTitleViolin before:content-[''] before:bg-gradient-to-b before:from-yellow before:to-red before:h-4/5 backgroundViolinDescription2c after:content-[''] after:bg-gradient-to-b after:from-lightGrey after:to-white after:-z-10 md:gap-y-0 md:gap-x-0 md:before:h-full md:grid-areas-mdMain md:grid-rows-mdRowsMain md:grid-cols-mdColumnsMain lg:grid-areas-lgMain lg:grid-rows-lgRowsMain lg:grid-cols-lgColumnsMain xl:grid-areas-xlMain xl:grid-rows-xlRowsMain xl:grid-cols-xlColumnsMain"
 		>
-			<h1 class="text-yellow w-fit my-5 mx-auto font-black md:text-3xl">
-				🚨EN CONTRUCCIÓN🚨
-			</h1>
-			<p>🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧</p>
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus nobis
-			repudiandae reiciendis officia amet, vitae accusantium maxime a deserunt
-			excepturi explicabo et nemo. Error a ipsam, illo molestiae adipisci dignissimos.
-			Culpa voluptatem quasi cumque, quia enim quos, ipsam nam quisquam assumenda
-			voluptatibus id molestias sit non voluptatum iure alias tenetur amet,
-			nulla porro! Aspernatur quas vel, hic id accusantium a. Corrupti minima
-			ad vero repellat distinctio necessitatibus nemo provident sint odit a.
-			Voluptas nam tempore nisi pariatur magnam hic sapiente necessitatibus
-			magni quos, eligendi fuga quod molestiae illo blanditiis adipisci! Minus,
-			officiis vitae repellat voluptas ab veritatis animi quibusdam repellendus
-			aperiam libero minima eius soluta qui suscipit quis explicabo labore
-			optio temporibus. Dolores magni molestias, voluptate officiis non quas.
-			Iusto. Quo maxime alias eligendi iste incidunt? Non quibusdam sint reprehenderit,
-			nisi architecto, sunt voluptatum consectetur, accusantium excepturi esse
-			quae! Earum optio consequuntur nobis dolores esse, recusandae accusamus
-			alias ipsum ullam! Laudantium quidem vero ipsam aliquam ab ducimus, corrupti
-			officiis modi? Deserunt repellendus praesentium quas explicabo eligendi,
-			et, deleniti libero eveniet amet culpa optio. Id rem amet voluptates
-			soluta itaque illo. Reiciendis repudiandae laboriosam corporis at nihil?
-			Fugit, labore dicta. Exercitationem officia quisquam vero totam distinctio
-			dicta cupiditate, nemo nostrum earum similique accusantium ex deleniti
-			iusto consequuntur illo aspernatur repellat! Nobis. Inventore veritatis
-			consequatur commodi omnis illo odit earum dolorem possimus vel excepturi
-			aut quidem, ullam itaque voluptatem rerum blanditiis, quas, maiores quasi?
-			Eveniet necessitatibus saepe adipisci aperiam, voluptatem molestiae sint?
-			Veniam accusantium a, illo natus eligendi voluptate dolores modi, voluptatum
-			facere repellat quae corrupti ea vel reiciendis voluptates omnis excepturi
-			repellendus totam obcaecati temporibus expedita eveniet eos, earum exercitationem?
-			Consectetur! Cum aperiam mollitia dolor optio earum velit possimus! Odio
-			officiis earum consectetur fuga ut dolorum, eos optio natus nulla velit
-			quis debitis officia impedit? Nihil impedit nam dolorem repudiandae ipsam.
-			<p>🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧⚠️🚧</p>
+			<nav class="hidden xl:block xl:pl-10 xl:grid-in-aboutMenu">
+				<ul
+					class="xl:h-full xl:text-white xl:font-bold xl:flex xl:flex-col xl:justify-evenly"
+				>
+					<li class="writingMode">Nosotros</li>
+					<li class="writingMode">Arte</li>
+					<li class="writingMode">Autor</li>
+				</ul>
+			</nav>
+			<div
+				class="px-5 pt-10 grid-in-title text-white md:pt-10 md:pb-5 md:px-10 xl:pt-40 xl:pb-20 xl:px-0 xl:justify-self-center"
+			>
+				<p class="font-black">2024</p>
+				<h2 class="font-italiana text-9xl">arco</h2>
+				<IconGitHub />
+			</div>
+			<p
+				class="px-5 text-white font-inter grid-in-description md:pt-5 md:pb-10 md:px-10 xl:text-right xl:self-center"
+			>
+				Bienvenido a tu blog de referencia para aprender y mejorar en el
+				violín. Encuentra consejos, tutoriales y recursos para avanzar
+				en tu viaje musical.
+			</p>
+			<figure
+				class="w-full max-w-[300px] mx-auto px-5 grid-in-violin md:h-fit md:pt-5 md:px-0 md:w-[38vw] md:max-w-[250px] md:self-center lg:w-fit lg:max-w-[310px] xl:w-[310px]"
+			>
+				<img
+					src="images/main/violin.webp"
+					alt="violin"
+					title="violin"
+				/>
+			</figure>
+			<h2
+				class="px-5 text-9xl text-red font-italiana grid-in-title2 md:pt-10 md:pb-5 md:px-10 xl:py-0 xl:text-right xl:self-end"
+			>
+				violín
+			</h2>
+			<p class="px-5 grid-in-description2a md:px-10 xl:text-right">
+				El violín es un instrumento musical de cuerda frotada, conocido
+				por su sonido agudo y brillante. Es el más pequeño y agudo de la
+				familia de los instrumentos de cuerda, que también incluye la
+				viola, el violonchelo y el contrabajo.
+				<br class="md:hidden" />
+			</p>
+			<p
+				class="px-5 grid-in-description2b md:py-4 md:px-10 xl:py-0 xl:pt-10"
+			>
+				El violín tiene sus raíces en los instrumentos de cuerda
+				medievales y renacentistas, como la lira da braccio y la viola
+				da gamba. Su forma moderna comenzó a tomar forma en el siglo
+				XVI. Estos primeros violines establecieron el estándar para la
+				calidad y el sonido que aún se busca en los instrumentos
+				modernos. El violín ha jugado un papel central en la música
+				clásica desde el Barroco hasta la actualidad. Compositores como
+				Johann Sebastian Bach, Wolfgang Amadeus Mozart y Ludwig van
+				Beethoven escribieron obras maestras para el violín.
+			</p>
+			<ul
+				class="px-5 flex flex-col gap-4 grid-in-description2c md:px-10 lg:flex-row lg:py-5 xl:flex-col xl:py-4"
+			>
+				<li>
+					<p class="flex gap-2 items-start">
+						<IconCompass />
+						En Arco, te guiamos en tu viaje musical. Ofrecemos recursos
+						detallados y accesibles para comprender el violín.
+					</p>
+				</li>
+				<li>
+					<p class="flex gap-2 items-start">
+						<IconMark />
+						La práctica y el estudio son claves. En nuestro blog hay
+						ejercicios, partituras y consejos para tu progreso.
+					</p>
+				</li>
+				<li>
+					<p class="flex gap-2 items-start">
+						<IconCheck />
+						Arco te ayuda a obtener resultados en el violín. Te damos
+						herramientas para medir tu progreso y alcanzar metas.
+					</p>
+				</li>
+			</ul>
 		</main>
 		<script src="../../src/scripts/menu.ts"></script>
 	</body>
